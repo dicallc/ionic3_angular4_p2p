@@ -27,7 +27,7 @@ so，开干
 [链接](http://learnserver.duapp.com/html/bdp2p/index.html)
 
 
-<img src="/gif/预览.png"/>
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_p2p/master/gif/%E9%A2%84%E8%A7%88.png" style="width: 320px;height: 480px"/>
 
 ### 2.总结 ###
 
@@ -39,7 +39,12 @@ so，开干
 
 3.绝对布局在ionic貌似有点不起作用....建议使用ionic的**ion-fab** 
 
+### 3.代码地址 ###
+
+[github地址](https://github.com/dicallc/ionic3_angular4_p2p)
 
 
 
+### 4.结语 ###
+有问题的话，可以在github中提issue一起讨论,如果能够帮你，轻轻的点一下star呗
 
