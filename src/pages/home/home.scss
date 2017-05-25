@@ -1,0 +1,30 @@
+page-home {
+  .icon_more {
+    font-size: 64px;
+    color : #222222;
+  }
+  .toolbar-background-ios{
+    background: white;
+  }
+  .content{
+   .header{
+     width: 100%;
+     height: 25%;
+     background-color: #FC5A5B;
+     .top{
+       width: 100%;
+       height: 60%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items:center;
+     }
+     .botttom{
+       width: 100%;
+       height: 39%;
+       display: flex;
+       align-items:center;
+     }
+   }
+  }
+}

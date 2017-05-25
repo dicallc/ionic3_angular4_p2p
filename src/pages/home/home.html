@@ -1,0 +1,211 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title style="background-color: #FFFFFF;color: #222222">
+      活期盈
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon class="icon_more" name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content" >
+  <ion-fab  bottom style="bottom: 0px;width: 100%;height: 50px;background-color: #FDFDFE;">
+    <div top style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+    <div style="display: flex;justify-content: center;align-items:center;height: 100%">
+      <button center style="background-color: #FB5A5C;width: 90%;height: 80%;border-radius: 5px;color: white;font-size: 18px;">立即转入</button>
+    </div>
+   </ion-fab >
+  <div class="header">
+    <div class="top">
+      <div style="width: 100%;color: #FDC0BC;font-size: 14px;text-align: center"> 昨日年华收益率</div>
+      <div style="width: 100%;color: #FFFFFF;font-size: 42px;text-align: center"> 4.600%</div>
+    </div>
+    <div style="width: 100%;color: white;height: 1px"></div>
+    <div class="botttom">
+      <div style="width: 50%;">
+        <div style="height: 100%;text-align: center;color: #FDC0BC;font-size: 14px;">起投金额(元)</div>
+        <div style="height: 100%;text-align: center;color: white;font-size: 17px;margin-top: 5px">1000</div>
+      </div>
+      <div style="width: 50%">
+        <div style="height: 100%;text-align: center;color: #FDC0BC;font-size: 14px">每万元收益(元)</div>
+        <div style="height: 100%;text-align: center;color: white;font-size: 17px;margin-top: 5px">1.2603</div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <div style="display:flex;background-color:white;width: 100%;height: 100px">
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/jixi.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">当日计息</div>
+    </div>
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/cunqu.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">灵活存取</div>
+    </div>
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/shouyi.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">收益更高</div>
+    </div>
+  </div>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">交易规则</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+
+    <ion-row style="padding-left: 15px;padding-right: 15px">
+    <ion-col style="color: #999999;font-size: 14px">
+      资金转入
+    </ion-col>
+    <ion-col col-9 style="color: #666666">
+     1000元起投，一元递增
+    </ion-col>
+  </ion-row>
+
+    <ion-row style="padding-left: 15px;padding-right: 15px">
+      <ion-col style="color: #999999">
+       收益规则
+      </ion-col>
+      <ion-col col-9  style="color: #666666">
+      当天15:00前转入,当天产生收益(周末及法定节日顺延),第二天可查看收益
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="padding-left: 15px;padding-right: 15px">
+      <ion-col align-self-start style="color: #999999">
+        资金转出
+      </ion-col>
+      <ion-col col-9  style="color: #666666">
+       当天15:00前转出,资金预计第二天23:59前到帐(周末及法定节日顺延),不支持2小时内快速到帐，转出当天无收益
+      </ion-col>
+      </ion-row>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">昨日年化</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+  <div padding #chartLine style="height: 200px;width: 100%">
+  </div>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">收益估算</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+  <div style="text-align: center;margin-top: 30px;font-size: 16px">
+    投资<a style="color: #E85352;font-size: 18px">20000</a>元,预计30日可赚<a style="color: #E85352;font-size: 18px">75.60</a>元
+  </div>
+  <ion-range style="margin-left: 30px;margin-right: 30px" min="1000" max="50000" step="10000" snaps="true" color="danger" [(ngModel)]="singleValue4"></ion-range>
+  <ion-row style="margin-left: 20px;margin-right: 10px;margin-bottom: 30px">
+    <ion-col style="color: #FFC8B9;text-align: start">
+      1000
+    </ion-col>
+    <ion-col style="color: #FFC8B9;text-align: start">
+     5000
+    </ion-col>
+    <ion-col style="color: #FFC8B9;text-align: start;">
+      10000
+    </ion-col>
+    <ion-col style="color: #FFC8B9;text-align: start;">
+     20000
+    </ion-col>
+    <ion-col style="color: #FFC8B9;text-align: start;">
+     50000
+    </ion-col >
+    <ion-col style="color: #FFC8B9;text-align: start;">
+      100000
+    </ion-col >
+  </ion-row>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white;">
+    <img  start src="assets/icon/safe.png" style="width: 24px;height: 24px"/>
+    <a start style="height:100%;font-size: 14px;color: #222222">百度理财 安全保障</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+  <div style="display:flex;background-color:white;width: 100%;height: 100px">
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/zichang.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">严选优质财产</div>
+    </div>
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/safe_baozhan.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">多重安全保障</div>
+    </div>
+    <div style="width:33%;display: flex;flex-direction: column;align-items: center;justify-content: center">
+      <img src="assets/icon/history_duifu.png" style="height: 42px"/>
+      <div style="text-align: center;margin-top: 5px;color: #666666">历史100%兑付</div>
+    </div>
+  </div>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">产品介绍</a>
+  </ion-navbar>
+  <div style="background-color: #EEEEEE;width: 100%;height: 2px"></div>
+
+  <ion-row style="padding-left: 15px;padding-right: 15px;margin-top: 10px">
+    <ion-col style="color: #999999;font-size: 14px">
+      产品类型
+    </ion-col>
+    <ion-col col-9 style="color: #666666">
+     开放型现金管理类产品
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="padding-left: 15px;padding-right: 15px">
+    <ion-col style="color: #999999">
+      风险说明
+    </ion-col>
+    <ion-col col-9  style="color: #666666">
+     风险等级为较低,适合稳健型及以上用户
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="padding-left: 15px;padding-right: 15px">
+    <ion-col align-self-start style="color: #999999">
+      投资范围
+    </ion-col>
+    <ion-col col-9  style="color: #666666">
+     存款、债券、债券基金、货币市场基金等流动型资产、以及符合监管要求的债权类资产、权益类资产或资产组合
+    </ion-col>
+  </ion-row>
+  <ion-row style="padding-left: 15px;padding-right: 15px">
+    <ion-col align-self-start style="color: #999999;font-size: 12px">
+      购买产品请仔细阅读<u>《产品说明书》</u>、<u>《认购协议》</u>、<u>《风险提示书》</u>、<u>《投资者承诺》</u>等相关信息。
+    </ion-col>
+  </ion-row>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">常见问题</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <ion-navbar navbar-ios-height="50px" style="padding-left:15px;padding-right:15px;background-color: white">
+    <a start style="font-size: 14px;color: #222222">支持银行及限额</a>
+    <ion-buttons end>
+      <ion-icon name="arrow-forward" style="color:#BCBCBC;font-size: 24px"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+  <div style="background-color: #EFEFF4;width: 100%;height: 8px"></div>
+  <div style="height: 50px;width: 100%">
+
+  </div>
+</ion-content>
