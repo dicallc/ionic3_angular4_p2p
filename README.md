@@ -27,7 +27,7 @@ so，开干
 [链接](http://learnserver.duapp.com/html/bdp2p/index.html)
 
 
-<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_p2p/master/gif/%E9%A2%84%E8%A7%88.png" style="width: 320px;height: 480px"/>
+<img src="https://raw.githubusercontent.com/dicallc/ionic3_angular4_p2p/master/gif/%E9%A2%84%E8%A7%88.png" />
 
 ### 2.总结 ###
 
